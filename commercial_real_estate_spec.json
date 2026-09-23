@@ -1,0 +1,37 @@
+{
+  "project_type": "Commercial Real Estate Platform",
+  "recommended_dataset": {
+    "properties": 100,
+    "agents": 30,
+    "developers": 15,
+    "reviews": 200,
+    "locations": 20,
+    "images_per_property": 5
+  },
+  "property_schema": {
+    "id": "PR001",
+    "title": "Marina Bay Sky Residence",
+    "description": "Luxury residence description",
+    "price_sgd": 1850000,
+    "listing_type": "Sale",
+    "property_type": "Condominium",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "area_sqft": 1250,
+    "location": "Marina Bay",
+    "district": "D01",
+    "nearest_mrt": "Downtown MRT",
+    "developer": "CapitaLand",
+    "agent_id": "AG001",
+    "amenities": [
+      "Pool",
+      "Gym",
+      "Parking"
+    ],
+    "images": [
+      "image1.jpg",
+      "image2.jpg"
+    ],
+    "featured": true
+  }
+}

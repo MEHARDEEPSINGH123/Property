@@ -1,0 +1,48 @@
+# Commercial Real Estate Website Guide
+
+## Design Style
+Luxury Minimalism
+
+## Color Palette
+Primary: #0F172A
+Accent: #D4AF37
+Background: #FFFFFF
+Surface: #F8FAFC
+Text: #111827
+
+## Typography
+Headings: Playfair Display
+Body: Inter
+
+## Required Pages
+- Home
+- Property Listings
+- Property Details
+- Agent Profiles
+- New Projects
+- Market Insights
+- About
+- Contact
+
+## Must-Have Features
+- Advanced Search
+- Filters
+- Property Comparison
+- Mortgage Calculator
+- Interactive Map
+- Saved Properties
+- Inquiry Forms
+- Reviews
+- AI Property Assistant
+
+## Homepage Sections
+1. Hero Search
+2. Featured Properties
+3. Popular Locations
+4. Top Agents
+5. Testimonials
+6. Market Insights
+7. Contact CTA
+
+## Portfolio Goal
+Make the website look comparable to PropertyGuru, Savills, Knight Frank, or Sotheby's Realty.
