@@ -8,7 +8,6 @@ import MortgageCalculatorModal from '../src/components/MortgageCalculatorModal';
 import AiAssistantModal from '../src/components/AiAssistantModal';
 import InquiryModal from '../src/components/InquiryModal';
 import Toast from '../src/components/Toast';
-import Chatbot from '../src/components/Chatbot';
 import '../src/index.css';
 
 const inter = Inter({
@@ -54,7 +53,6 @@ export default function RootLayout({ children }) {
           <AiAssistantModal />
           <InquiryModal />
           <Toast />
-          <Chatbot />
         </AppProvider>
       </body>
     </html>

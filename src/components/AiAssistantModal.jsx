@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
+import Script from 'next/script';
 import { useApp } from '../context/AppContext';
 import { 
   Sparkles, 
@@ -50,22 +51,32 @@ export default function AiAssistantModal() {
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, isTyping]);
 
-  if (!isAiAssistantOpen) {
-    return (
-      <button
-        onClick={() => setIsAiAssistantOpen(true)}
-        className="fixed bottom-24 right-6 z-40 bg-primary hover:bg-slate-900 text-white rounded-full p-3.5 sm:px-5 sm:py-3.5 shadow-2xl border-2 border-gold/70 flex items-center space-x-2.5 transition-all duration-300 hover:scale-105 group"
-        title="Open AURELIA AI Concierge"
-      >
-        <div className="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
-          <Sparkles className="w-4 h-4 text-gold animate-spin-slow" />
-        </div>
-        <span className="hidden sm:inline font-serif text-sm font-semibold tracking-wide text-gold">
-          Ask AURELIA
-        </span>
-      </button>
-    );
-  }
+  const handleOpenAssistant = (e) => {
+    if (typeof window !== 'undefined') {
+      if (window.DagsisChat) {
+        if (typeof window.DagsisChat.open === 'function') {
+          window.DagsisChat.open();
+          return;
+        }
+        if (typeof window.DagsisChat.toggle === 'function') {
+          window.DagsisChat.toggle();
+          return;
+        }
+        if (typeof window.DagsisChat.show === 'function') {
+          window.DagsisChat.show();
+          return;
+        }
+      }
+      const dagsisEl = document.querySelector(
+        '#dagsis-launcher, .dagsis-launcher, .dagsis-widget-button, #dagsis-chat-button'
+      );
+      if (dagsisEl && typeof dagsisEl.click === 'function' && dagsisEl !== e?.currentTarget) {
+        dagsisEl.click();
+        return;
+      }
+    }
+    setIsAiAssistantOpen(true);
+  };
 
   const handleSend = (textToSend = null) => {
     const query = (textToSend || inputQuery).trim();
@@ -155,7 +166,39 @@ export default function AiAssistantModal() {
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-hidden bg-primary/60 backdrop-blur-sm flex justify-end sm:p-4 animate-in fade-in">
+    <>
+      <Script
+        src="https://dagsis.jsuite.in/widget.js"
+        strategy="afterInteractive"
+        onLoad={() => {
+          try {
+            if (typeof window !== 'undefined' && window.DagsisChat) {
+              window.DagsisChat.init({
+                agentId: "e6177c88-a70b-4059-baa3-381d70d1c432",
+                apiKey: "a3faad11-aa05-4dee-99c7-f15c66be3c5b"
+              });
+            }
+          } catch (err) {
+            console.error("DagsisChat initialization error:", err);
+          }
+        }}
+      />
+
+      {!isAiAssistantOpen ? (
+        <button
+          onClick={handleOpenAssistant}
+          className="fixed bottom-6 right-6 z-40 bg-primary hover:bg-slate-900 text-white rounded-full p-3.5 sm:px-5 sm:py-3.5 shadow-2xl border-2 border-gold/70 flex items-center space-x-2.5 transition-all duration-300 hover:scale-105 group"
+          title="Open AURELIA AI Concierge"
+        >
+          <div className="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
+            <Sparkles className="w-4 h-4 text-gold animate-spin-slow" />
+          </div>
+          <span className="hidden sm:inline font-serif text-sm font-semibold tracking-wide text-gold">
+            Ask AURELIA
+          </span>
+        </button>
+      ) : (
+        <div className="fixed inset-0 z-50 overflow-hidden bg-primary/60 backdrop-blur-sm flex justify-end sm:p-4 animate-in fade-in">
       <div className="bg-white w-full sm:max-w-lg h-full sm:h-[88vh] sm:rounded-luxury-lg shadow-2xl flex flex-col border border-luxury-border overflow-hidden">
         {/* Header */}
         <div className="p-4 sm:p-5 bg-primary text-white flex items-center justify-between border-b border-slate-800">
@@ -298,5 +341,7 @@ export default function AiAssistantModal() {
         </div>
       </div>
     </div>
+  )}
+</>
   );
 }

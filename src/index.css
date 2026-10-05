@@ -47,3 +47,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* Hide default Dagsis floating launcher so only the custom Ask AURELIA button triggers it */
+#dagsis-launcher,
+.dagsis-launcher,
+.dagsis-widget-button,
+#dagsis-chat-button {
+  display: none !important;
+}
