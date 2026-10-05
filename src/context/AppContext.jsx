@@ -38,7 +38,30 @@ export function AppProvider({ children }) {
   const [inquiryProperty, setInquiryProperty] = useState(null);
   const [inquiryAgent, setInquiryAgent] = useState(null);
 
-  const [isAiAssistantOpen, setIsAiAssistantOpen] = useState(false);
+  const openChatbot = () => {
+    if (typeof window !== 'undefined') {
+      if (window.DagsisChat) {
+        if (typeof window.DagsisChat.open === 'function') {
+          window.DagsisChat.open();
+          return;
+        }
+        if (typeof window.DagsisChat.toggle === 'function') {
+          window.DagsisChat.toggle();
+          return;
+        }
+        if (typeof window.DagsisChat.show === 'function') {
+          window.DagsisChat.show();
+          return;
+        }
+      }
+      const el = document.querySelector(
+        '#dagsis-launcher, .dagsis-launcher, .dagsis-widget-button, #dagsis-chat-button, [class*="dagsis"], [id*="dagsis"]'
+      );
+      if (el && typeof el.click === 'function') {
+        el.click();
+      }
+    }
+  };
 
   // Toast Notification
   const [toastMessage, setToastMessage] = useState(null);
@@ -160,8 +183,9 @@ export function AppProvider({ children }) {
         inquiryAgent,
         openInquiry,
 
-        isAiAssistantOpen,
-        setIsAiAssistantOpen,
+        isAiAssistantOpen: false,
+        setIsAiAssistantOpen: openChatbot,
+        openChatbot,
 
         toastMessage,
         showToast

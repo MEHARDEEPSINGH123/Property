@@ -5,7 +5,7 @@ import Navbar from '../src/components/Navbar';
 import Footer from '../src/components/Footer';
 import CompareDrawer from '../src/components/CompareDrawer';
 import MortgageCalculatorModal from '../src/components/MortgageCalculatorModal';
-import AiAssistantModal from '../src/components/AiAssistantModal';
+import Chatbot from '../src/components/Chatbot';
 import InquiryModal from '../src/components/InquiryModal';
 import Toast from '../src/components/Toast';
 import '../src/index.css';
@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
           {/* Global Modals & Drawers */}
           <CompareDrawer />
           <MortgageCalculatorModal />
-          <AiAssistantModal />
+          <Chatbot />
           <InquiryModal />
           <Toast />
         </AppProvider>
