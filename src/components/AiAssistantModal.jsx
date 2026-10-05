@@ -54,7 +54,7 @@ export default function AiAssistantModal() {
     return (
       <button
         onClick={() => setIsAiAssistantOpen(true)}
-        className="fixed bottom-6 right-6 z-40 bg-primary hover:bg-slate-900 text-white rounded-full p-3.5 sm:px-5 sm:py-3.5 shadow-2xl border-2 border-gold/70 flex items-center space-x-2.5 transition-all duration-300 hover:scale-105 group"
+        className="fixed bottom-24 right-6 z-40 bg-primary hover:bg-slate-900 text-white rounded-full p-3.5 sm:px-5 sm:py-3.5 shadow-2xl border-2 border-gold/70 flex items-center space-x-2.5 transition-all duration-300 hover:scale-105 group"
         title="Open AURELIA AI Concierge"
       >
         <div className="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
