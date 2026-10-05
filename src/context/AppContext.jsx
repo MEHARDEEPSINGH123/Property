@@ -38,29 +38,25 @@ export function AppProvider({ children }) {
   const [inquiryProperty, setInquiryProperty] = useState(null);
   const [inquiryAgent, setInquiryAgent] = useState(null);
 
+  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
+
   const openChatbot = () => {
-    if (typeof window !== 'undefined') {
-      if (window.DagsisChat) {
+    setIsChatbotOpen(true);
+    if (typeof window !== 'undefined' && window.DagsisChat) {
+      try {
         if (typeof window.DagsisChat.open === 'function') {
           window.DagsisChat.open();
-          return;
-        }
-        if (typeof window.DagsisChat.toggle === 'function') {
+        } else if (typeof window.DagsisChat.toggle === 'function') {
           window.DagsisChat.toggle();
-          return;
         }
-        if (typeof window.DagsisChat.show === 'function') {
-          window.DagsisChat.show();
-          return;
-        }
-      }
-      const el = document.querySelector(
-        '#dagsis-launcher, .dagsis-launcher, .dagsis-widget-button, #dagsis-chat-button, [class*="dagsis"], [id*="dagsis"]'
-      );
-      if (el && typeof el.click === 'function') {
-        el.click();
+      } catch (err) {
+        console.error("Dagsis open error:", err);
       }
     }
+  };
+
+  const closeChatbot = () => {
+    setIsChatbotOpen(false);
   };
 
   // Toast Notification
@@ -183,9 +179,12 @@ export function AppProvider({ children }) {
         inquiryAgent,
         openInquiry,
 
-        isAiAssistantOpen: false,
-        setIsAiAssistantOpen: openChatbot,
+        isChatbotOpen,
+        setIsChatbotOpen,
         openChatbot,
+        closeChatbot,
+        isAiAssistantOpen: isChatbotOpen,
+        setIsAiAssistantOpen: (open) => open ? openChatbot() : closeChatbot(),
 
         toastMessage,
         showToast
