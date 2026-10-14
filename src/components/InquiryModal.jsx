@@ -248,7 +248,7 @@ export default function InquiryModal() {
             <div className="flex items-center justify-between pt-2">
               <div className="flex items-center space-x-1.5 text-[11px] text-slate-400">
                 <ShieldCheck className="w-4 h-4 text-gold flex-shrink-0" />
-                <span>Encrypted & Protected by AUREA Client Privilege</span>
+                <span>Encrypted & Protected by Dagsis Client Privilege</span>
               </div>
               <button
                 type="submit"

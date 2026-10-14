@@ -23,10 +23,10 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  title: 'AUREA | Prime Singapore Real Estate & Private Residences',
-  description: 'Explore ultra-luxury penthouses, Good Class Bungalows, and prime commercial assets in Singapore. Curated by AUREA Private Office.',
+  title: 'Dagsis Real Estate Dummy | Prime Singapore Real Estate & Private Residences',
+  description: 'Explore ultra-luxury penthouses, Good Class Bungalows, and prime commercial assets in Singapore. Curated by Dagsis Real Estate Dummy.',
   icons: {
-    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230F172A'/><path d='M50 20 L78 68 L68 68 L60 52 L40 52 L32 68 L22 68 Z M50 34 L43 47 L57 47 Z' fill='%23D4AF37'/></svg>"
+    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230F172A'/><text x='50' y='68' font-size='56' font-family='serif' font-weight='bold' text-anchor='middle' fill='%23D4AF37'>D</text></svg>"
   }
 };
 

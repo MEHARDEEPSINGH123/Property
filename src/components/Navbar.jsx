@@ -49,14 +49,14 @@ export default function Navbar() {
         {/* Brand Logo */}
         <Link href="/" className="flex items-center space-x-3 group">
           <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center border border-gold/40 shadow-sm group-hover:border-gold transition-colors">
-            <span className="font-serif text-xl font-bold text-gold">A</span>
+            <span className="font-serif text-xl font-bold text-gold">D</span>
           </div>
           <div className="flex flex-col">
             <span className="font-serif text-2xl font-bold tracking-tight text-primary">
-              AUREA
+              Dagsis
             </span>
             <span className="text-[10px] tracking-[0.25em] text-luxury-textSecondary uppercase font-medium">
-              Private Estates
+              Real Estate Dummy
             </span>
           </div>
         </Link>
@@ -186,7 +186,7 @@ export default function Navbar() {
               className="w-full flex items-center justify-center space-x-2 bg-primary text-gold text-sm font-semibold py-3 rounded-xl"
             >
               <Sparkles className="w-4 h-4" />
-              <span>Ask AURELIA AI Concierge</span>
+              <span>Ask Dagsis AI</span>
             </button>
 
             <button

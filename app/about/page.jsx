@@ -48,7 +48,7 @@ export default function AboutPage() {
               Where Family Office Rigor Meets Architectural Stewardship
             </h2>
             <p className="text-xs sm:text-sm text-luxury-textSecondary leading-relaxed">
-              At AUREA, we view prime Singapore real estate not merely as square footage, but as generational wealth preservation vehicles and architectural masterworks. Our private advisory model deliberately rejects high-volume brokerage in favor of bespoke, confidential representation.
+              At Dagsis Real Estate Dummy, we view prime Singapore real estate not merely as square footage, but as generational wealth preservation vehicles and architectural masterworks. Our private advisory model deliberately rejects high-volume brokerage in favor of bespoke, confidential representation.
             </p>
             <p className="text-xs sm:text-sm text-luxury-textSecondary leading-relaxed">
               Operating out of Marina Bay Financial Centre, our senior partners coordinate directly with private banks, Singapore legal counsel, and tax advisors to orchestrate frictionless cross-border acquisitions, off-market Good Class Bungalows, and trophy commercial shophouse portfolios.
@@ -70,7 +70,7 @@ export default function AboutPage() {
             <div className="aspect-[4/3] rounded-luxury-lg overflow-hidden shadow-luxury border border-luxury-border">
               <img
                 src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
-                alt="AUREA Private Office Singapore"
+                alt="Dagsis Real Estate Dummy Singapore"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -95,7 +95,7 @@ export default function AboutPage() {
               Advisory Standards
             </div>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-primary">
-              The Four Pillars of AUREA
+              The Four Pillars of Dagsis
             </h2>
           </div>
 
@@ -153,7 +153,7 @@ export default function AboutPage() {
           onClick={() => openInquiry()}
           className="bg-gold hover:bg-gold-dark text-slate-950 font-bold uppercase tracking-wider text-xs px-8 py-3.5 rounded-xl shadow-soft hover:shadow-luxury transition-all"
         >
-          Consult AUREA Senior Partner
+          Consult Dagsis Senior Partner
         </button>
       </section>
     </div>

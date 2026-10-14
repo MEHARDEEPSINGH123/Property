@@ -343,7 +343,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <div className="text-xs uppercase tracking-[0.2em] text-gold-dark font-semibold mb-2">
-              The AUREA Standard
+              The Dagsis Standard
             </div>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-luxury-textPrimary">
               Why Discerning Clients Choose Us

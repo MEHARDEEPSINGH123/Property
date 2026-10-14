@@ -23,7 +23,7 @@ export default function Footer() {
     e.preventDefault();
     if (!email || !email.includes('@')) return;
     setSubscribed(true);
-    showToast('Subscribed to AUREA Quarterly Private Wealth Intelligence');
+    showToast('Subscribed to Dagsis Quarterly Private Wealth Intelligence');
     setEmail('');
   };
 
@@ -80,15 +80,15 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-5">
             <div className="flex items-center space-x-3">
               <div className="w-9 h-9 rounded-xl bg-slate-900 border border-gold/40 flex items-center justify-center">
-                <span className="font-serif text-lg font-bold text-gold">A</span>
+                <span className="font-serif text-lg font-bold text-gold">D</span>
               </div>
               <div>
-                <span className="font-serif text-xl font-bold text-white tracking-wide">AUREA</span>
-                <span className="block text-[9px] tracking-[0.2em] text-gold uppercase font-medium">Private Office</span>
+                <span className="font-serif text-xl font-bold text-white tracking-wide">Dagsis</span>
+                <span className="block text-[9px] tracking-[0.2em] text-gold uppercase font-medium">Real Estate Dummy</span>
               </div>
             </div>
             <p className="text-slate-400 text-xs sm:text-sm leading-relaxed pr-4">
-              AUREA is Singapore's foremost private client brokerage, representing international family offices, sovereign principals, and discerning individuals across trophy residential and commercial real estate.
+              Dagsis Real Estate Dummy is Singapore's foremost private client brokerage, representing international family offices, sovereign principals, and discerning individuals across trophy residential and commercial real estate.
             </p>
             <div className="space-y-2 text-xs text-slate-400">
               <div className="flex items-start space-x-2.5">
@@ -101,7 +101,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2.5">
                 <Mail className="w-4 h-4 text-gold flex-shrink-0" />
-                <span>privateoffice@aurea-estates.com</span>
+                <span>privateoffice@dagsis-realestate.com</span>
               </div>
             </div>
           </div>
@@ -152,7 +152,7 @@ export default function Footer() {
           <div className="flex items-center space-x-2">
             <ShieldCheck className="w-4 h-4 text-gold/80" />
             <span>
-              Registered Estate Agent | CEA Licence No. L3008920K | © 2026 AUREA International Realty Pte Ltd. All Rights Reserved.
+              Registered Estate Agent | CEA Licence No. L3008920K | © 2026 Dagsis Real Estate Dummy Pte Ltd. All Rights Reserved.
             </span>
           </div>
           <div className="flex items-center space-x-6 text-slate-400">

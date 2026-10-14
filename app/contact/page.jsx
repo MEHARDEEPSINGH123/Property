@@ -82,7 +82,7 @@ export default function ContactPage() {
               </div>
               <div className="flex items-center space-x-3 text-slate-300">
                 <Mail className="w-4 h-4 text-gold flex-shrink-0" />
-                <span>privateoffice@aurea-estates.com</span>
+                <span>privateoffice@dagsis-realestate.com</span>
               </div>
               <div className="flex items-start space-x-3 text-slate-300">
                 <Clock className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />
@@ -103,7 +103,7 @@ export default function ContactPage() {
           <div className="bg-surface rounded-luxury-lg overflow-hidden border border-luxury-border shadow-soft p-2">
             <div className="relative h-64 rounded-xl overflow-hidden bg-slate-900">
               <iframe
-                title="AUREA Singapore Office"
+                title="Dagsis Real Estate Dummy Singapore Office"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.819921477759!2d103.85223067579697!3d1.2818169987060375!2m3!1f0!2f0!3f0!3m2!1i1024!2f768!4f13.1!3m3!1m2!1s0x31da19098df4ab19%3A0xe54b9d5a6a684b66!2sMarina%20Bay%20Financial%20Centre%20Tower%202!5e0!3m2!1sen!2ssg!4v1700000000000!5m2!1sen!2ssg"
                 width="100%"
                 height="100%"

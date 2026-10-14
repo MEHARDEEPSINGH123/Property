@@ -15,7 +15,7 @@ export default function Chatbot() {
   // Official Dagsis AI Agent credentials
   const agentId = "e6177c88-a70b-4059-baa3-381d70d1c432";
   const apiKey = "a3faad11-aa05-4dee-99c7-f15c66be3c5b";
-  const agentName = "AURELIA AI";
+  const agentName = "Dagsis AI";
   
   // Real live Dagsis AI production embed endpoint
   const embedUrl = `https://dagsis.ai/embed/${agentId}?name=${encodeURIComponent(agentName)}#apiKey=${encodeURIComponent(apiKey)}`;
@@ -50,7 +50,7 @@ export default function Chatbot() {
               <div>
                 <div className="flex items-center space-x-2">
                   <h3 className="font-serif text-sm font-bold text-white tracking-wide">
-                    AURELIA
+                    Dagsis AI
                   </h3>
                   <span className="flex items-center space-x-1 text-[9px] bg-[#D4AF37]/20 text-[#D4AF37] border border-[#D4AF37]/30 px-2 py-0.5 rounded-full font-medium uppercase tracking-wider">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -94,7 +94,7 @@ export default function Chatbot() {
               onLoad={() => setIframeLoaded(true)}
               className="w-full h-full border-none"
               allow="clipboard-write; microphone"
-              title="AURELIA Dagsis AI Agent"
+              title="Dagsis Real Estate Dummy AI Agent"
             />
           </div>
         </div>

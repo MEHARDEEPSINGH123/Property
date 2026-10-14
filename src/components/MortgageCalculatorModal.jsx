@@ -319,7 +319,7 @@ export default function MortgageCalculatorModal() {
                 </span>
               </div>
               <p className="text-[10px] text-slate-400 leading-relaxed">
-                Includes statutory BSD + ABSD duties payable within 14 days of Option Exercise. AUREA Private Office can coordinate pre-approved international private bank facility financing.
+                Includes statutory BSD + ABSD duties payable within 14 days of Option Exercise. Dagsis Real Estate Dummy can coordinate pre-approved international private bank facility financing.
               </p>
             </div>
           </div>

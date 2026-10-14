@@ -55,7 +55,7 @@ export default function MarketInsightsPage() {
           Market Insights & Financial Dashboards
         </h1>
         <p className="text-xs sm:text-sm text-luxury-textSecondary leading-relaxed">
-          Comprehensive econometric indices, district PSF comparisons, and asset allocation dynamics tracked by AUREA Private Office Research.
+          Comprehensive econometric indices, district PSF comparisons, and asset allocation dynamics tracked by Dagsis Real Estate Dummy Research.
         </p>
       </div>
 

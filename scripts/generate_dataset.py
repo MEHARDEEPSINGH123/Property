@@ -517,7 +517,7 @@ for i in range(30):
         "specialization": spec,
         "languages": langs,
         "phone": phone,
-        "email": f"{first.lower()}.{last.lower()}@aurea-estates.com",
+        "email": f"{first.lower()}.{last.lower()}@dagsis-realestate.com",
         "photo": photo,
         "bio": f"{name} is an esteemed luxury real estate advisor with over {exp} years of distinguished experience representing ultra-high-net-worth clients, family offices, and institutional investors in Singapore's most coveted residential and commercial enclaves."
     })
@@ -751,11 +751,11 @@ REVIEW_NAMES = [
 ]
 
 FEEDBACK_TEMPLATES = [
-    "Acquiring our penthouse through AUREA was an impeccably smooth transaction. The confidentiality and analytical rigor were exceptional.",
+    "Acquiring our penthouse through Dagsis was an impeccably smooth transaction. The confidentiality and analytical rigor were exceptional.",
     "Their team arranged private after-hours viewings and negotiated terms with maximum discretion. Truly the premier luxury brokerage in Singapore.",
     "The market insights provided gave our family office complete clarity on district appreciation and stamp duty structures.",
     "A masterclass in private wealth real estate advisory. Found us an off-market Good Class Bungalow in Nassim that exceeded every expectation.",
-    "From legal escrow coordination to designer interior recommendations, AUREA handled everything seamlessly. Unrivaled professionalism.",
+    "From legal escrow coordination to designer interior recommendations, Dagsis handled everything seamlessly. Unrivaled professionalism.",
     "Remarkable attention to detail. The virtual walkthroughs and 3D architectural models were crucial for our overseas acquisition.",
     "Best experience buying commercial shophouses in Tanjong Pagar. Their yield projections were accurate down to the decimal point."
 ]
