@@ -51,7 +51,7 @@ export default function AboutPage() {
               At Dagsis Real Estate Dummy, we view prime Singapore real estate not merely as square footage, but as generational wealth preservation vehicles and architectural masterworks. Our private advisory model deliberately rejects high-volume brokerage in favor of bespoke, confidential representation.
             </p>
             <p className="text-xs sm:text-sm text-luxury-textSecondary leading-relaxed">
-              Operating out of Marina Bay Financial Centre, our senior partners coordinate directly with private banks, Singapore legal counsel, and tax advisors to orchestrate frictionless cross-border acquisitions, off-market Good Class Bungalows, and trophy commercial shophouse portfolios.
+              Operating out of 123, Street ABC, State XYZ, Pin-000000, our senior partners coordinate directly with private banks, Singapore legal counsel, and tax advisors to orchestrate frictionless cross-border acquisitions, off-market Good Class Bungalows, and trophy commercial shophouse portfolios.
             </p>
 
             <div className="grid grid-cols-2 gap-6 pt-4 border-t border-luxury-border">

@@ -470,7 +470,7 @@ export default function PropertyDetailPage() {
               {/* Direct Communication Buttons */}
               <div className="grid grid-cols-2 gap-2">
                 <a
-                  href={`tel:${agent.phone.replace(/[^0-9+]/g, '')}`}
+                  href={`tel:${agent.phone.replace(/\s+/g, '')}`}
                   className="flex items-center justify-center space-x-1.5 py-3 rounded-xl border border-luxury-border hover:border-primary text-primary text-xs font-semibold bg-surface transition-colors"
                 >
                   <Phone className="w-3.5 h-3.5 text-gold-dark" />

@@ -62,23 +62,23 @@ export default function ContactPage() {
                 Headquarters
               </span>
               <h3 className="font-serif text-2xl font-bold text-white">
-                Marina Bay Financial Centre
+                Dagsis Real Estate Dummy Headquarters
               </h3>
-              <p className="text-xs text-slate-400 mt-1">Level 38, Tower 2, 10 Marina Boulevard, Singapore 018983</p>
+              <p className="text-xs text-slate-400 mt-1">123, Street ABC, State XYZ, Pin-000000</p>
             </div>
 
             <div className="space-y-4 pt-4 border-t border-slate-800 text-xs">
               <div className="flex items-start space-x-3 text-slate-300">
                 <MapPin className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />
-                <span>Downtown & Marina Bay MRT directly accessible via underground passage</span>
+                <span>123, Street ABC, State XYZ, Pin-000000</span>
               </div>
               <div className="flex items-center space-x-3 text-slate-300">
                 <Phone className="w-4 h-4 text-gold flex-shrink-0" />
-                <span>Direct Switchboard: +65 6789 2800</span>
+                <span>Direct Switchboard: +65 XXXXXXXXX</span>
               </div>
               <div className="flex items-center space-x-3 text-slate-300">
                 <MessageSquare className="w-4 h-4 text-gold flex-shrink-0" />
-                <span>Concierge WhatsApp: +65 8920 1888</span>
+                <span>Concierge WhatsApp: +65 XXXXXXXXX</span>
               </div>
               <div className="flex items-center space-x-3 text-slate-300">
                 <Mail className="w-4 h-4 text-gold flex-shrink-0" />
@@ -115,7 +115,7 @@ export default function ContactPage() {
               ></iframe>
               <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-md border border-luxury-border text-xs flex items-center space-x-2">
                 <Navigation className="w-3.5 h-3.5 text-gold-dark" />
-                <span className="font-semibold text-primary">MBFC Tower 2, Level 38</span>
+                <span className="font-semibold text-primary">123, Street ABC, State XYZ, Pin-000000</span>
               </div>
             </div>
           </div>
@@ -195,7 +195,7 @@ export default function ContactPage() {
                     required
                     value={form.phone}
                     onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                    placeholder="+65 8123 4567"
+                    placeholder="+65 XXXXXXXXX"
                     className="w-full bg-surface border border-luxury-border rounded-xl px-4 py-3 text-xs text-primary outline-none focus:border-gold"
                   />
                 </div>

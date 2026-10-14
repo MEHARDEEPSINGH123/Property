@@ -499,7 +499,7 @@ for i in range(30):
     exp = random.randint(8, 26)
     rating = round(random.uniform(4.82, 5.0), 2)
     vol = random.randint(80, 480) # millions SGD
-    phone = f"+65 8{random.randint(100, 999)} {random.randint(1000, 9999)}"
+    phone = "+65 XXXXXXXXX"
     cea = f"R{random.randint(100000, 999999)}{chr(random.randint(65, 90))}"
     spec = SPECIALTIES[i % len(SPECIALTIES)]
     langs = LANGUAGES_LIST[i % len(LANGUAGES_LIST)]

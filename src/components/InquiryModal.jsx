@@ -201,7 +201,7 @@ export default function InquiryModal() {
                   required
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  placeholder="+65 8000 1234"
+                  placeholder="+65 XXXXXXXXX"
                   className="w-full bg-surface border border-luxury-border rounded-xl px-3.5 py-2.5 text-xs text-primary outline-none focus:border-gold"
                 />
               </div>

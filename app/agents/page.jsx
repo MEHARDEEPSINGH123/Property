@@ -188,7 +188,7 @@ export default function AgentsPage() {
 
                 <div className="grid grid-cols-2 gap-2 text-xs pt-1">
                   <a
-                    href={`tel:${agent.phone.replace(/[^0-9+]/g, '')}`}
+                    href={`tel:${agent.phone.replace(/\s+/g, '')}`}
                     className="flex items-center justify-center space-x-1 py-2 rounded-lg border border-luxury-border hover:bg-surface text-slate-600 transition-colors"
                   >
                     <Phone className="w-3 h-3 text-gold" />

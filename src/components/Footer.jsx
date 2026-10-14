@@ -93,11 +93,11 @@ export default function Footer() {
             <div className="space-y-2 text-xs text-slate-400">
               <div className="flex items-start space-x-2.5">
                 <MapPin className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />
-                <span>Marina Bay Financial Centre, Tower 2, Level 38, Singapore 018983</span>
+                <span>123, Street ABC, State XYZ, Pin-000000</span>
               </div>
               <div className="flex items-center space-x-2.5">
                 <Phone className="w-4 h-4 text-gold flex-shrink-0" />
-                <span>+65 6789 2800 | Concierge: +65 8920 1888</span>
+                <span>+65 XXXXXXXXX</span>
               </div>
               <div className="flex items-center space-x-2.5">
                 <Mail className="w-4 h-4 text-gold flex-shrink-0" />
