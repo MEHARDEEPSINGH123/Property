@@ -22,18 +22,18 @@ export default function Chatbot() {
 
   return (
     <>
-      {/* 1. Floating 'Ask AURELIA' Button */}
+      {/* 1. Floating 'Ask Dagsis AI' Button */}
       {!isChatbotOpen && (
         <button
           onClick={openChatbot}
           className="fixed bottom-6 right-6 z-50 bg-[#0F172A] hover:bg-slate-900 text-white rounded-full p-3.5 sm:px-5 sm:py-3.5 shadow-2xl border-2 border-[#D4AF37] flex items-center space-x-2.5 transition-all duration-300 hover:scale-105 group"
-          title="Open AURELIA AI Concierge"
+          title="Open Dagsis AI Concierge"
         >
           <div className="w-6 h-6 rounded-full bg-[#D4AF37]/20 flex items-center justify-center text-[#D4AF37] group-hover:scale-110 transition-transform">
             <Sparkles className="w-4 h-4 text-[#D4AF37] animate-spin-slow" />
           </div>
           <span className="hidden sm:inline font-serif text-sm font-semibold tracking-wide text-[#D4AF37]">
-            Ask AURELIA
+            Ask Dagsis AI
           </span>
         </button>
       )}
