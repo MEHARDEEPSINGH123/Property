@@ -42,21 +42,24 @@ export function AppProvider({ children }) {
 
   const openChatbot = () => {
     setIsChatbotOpen(true);
-    if (typeof window !== 'undefined' && window.DagsisChat) {
-      try {
-        if (typeof window.DagsisChat.open === 'function') {
-          window.DagsisChat.open();
-        } else if (typeof window.DagsisChat.toggle === 'function') {
-          window.DagsisChat.toggle();
-        }
-      } catch (err) {
-        console.error("Dagsis open error:", err);
+    if (typeof window !== 'undefined') {
+      const container = document.getElementById('dagsis-chat-container');
+      const btn = document.getElementById('dagsis-chat-button');
+      if (container && container.style.display !== 'block' && btn) {
+        btn.click();
       }
     }
   };
 
   const closeChatbot = () => {
     setIsChatbotOpen(false);
+    if (typeof window !== 'undefined') {
+      const container = document.getElementById('dagsis-chat-container');
+      const btn = document.getElementById('dagsis-chat-button');
+      if (container && container.style.display === 'block' && btn) {
+        btn.click();
+      }
+    }
   };
 
   // Toast Notification
