@@ -42,24 +42,10 @@ export function AppProvider({ children }) {
 
   const openChatbot = () => {
     setIsChatbotOpen(true);
-    if (typeof window !== 'undefined') {
-      const container = document.getElementById('dagsis-chat-container');
-      const btn = document.getElementById('dagsis-chat-button');
-      if (container && container.style.display !== 'block' && btn) {
-        btn.click();
-      }
-    }
   };
 
   const closeChatbot = () => {
     setIsChatbotOpen(false);
-    if (typeof window !== 'undefined') {
-      const container = document.getElementById('dagsis-chat-container');
-      const btn = document.getElementById('dagsis-chat-button');
-      if (container && container.style.display === 'block' && btn) {
-        btn.click();
-      }
-    }
   };
 
   // Toast Notification
